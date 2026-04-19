@@ -1,125 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resume | Aashit Singh</title>
-  <link rel="stylesheet" href="css/main.css" />
-</head>
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Aashit Singh - Resume</title>
 
-<body>
+    <link rel="stylesheet" href="styles.css" />
 
-  <!-- NAVBAR -->
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
-      <a href="blogs.html">Blogs</a>
-      <a href="domains.html">Domains</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
 
-  <main>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+  </head>
+  <body
+    class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col pt-24 pb-20 md:pb-0 overflow-x-hidden custom-scrollbar"
+  >
+    <site-header active-page="resume"></site-header>
 
-    <!-- 1. HEADER / IDENTITY -->
-    <section>
-      <h1>Aashit Singh</h1>
-      <p>Engineering Manager | AI/ML Systems | Distributed Systems</p>
-      <p>
-        <a href="mailto:aashit.singh18@gmail.com">Email</a> |
-        <a href="https://linkedin.com/in/aashit-singh" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/aks18" target="_blank">GitHub</a>
-      </p>
-    </section>
+    <main
+      class="flex-grow pt-[60px] pb-32 md:pb-24 px-6 md:px-12 lg:px-24 max-w-[1200px] mx-auto w-full flex flex-col gap-[120px] animate-fade-in-up"
+    >
+      <section
+        class="flex flex-col md:flex-row gap-12 md:gap-24 items-start relative"
+      >
+        <div
+          class="absolute -top-32 -left-32 w-96 h-96 bg-primary-fixed/5 rounded-full blur-[100px] pointer-events-none"
+        ></div>
+        <div class="flex-1 space-y-8 z-10">
+          <div class="space-y-4">
+            <span
+              class="font-label text-sm uppercase tracking-[0.2em] text-on-surface-variant font-semibold"
+              >Resume</span
+            >
+            <h1
+              class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-primary leading-[1.1]"
+            >
+              Architecting <br />
+              <span class="text-primary-fixed">Digital</span> Experiences.
+            </h1>
+          </div>
+          <p
+            class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed"
+          >
+            Engineering leader specializing in designing and building <b>INTELLIGENT</b>, scalable systems, with 8+ years of experience applying AI/ML to develop automation solutions and solve ambiguous business problems through data science.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <a
+              class="bg-primary-fixed text-on-primary-fixed font-label font-bold px-8 py-4 rounded-md hover:shadow-primary-glow transition-all flex items-center gap-2"
+              href="assets/AashitSinghResume.pdf"
+              download="AS-Resume.pdf"
+            >
+              <span>Download PDF</span>
+              <span
+                class="material-symbols-outlined text-sm"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >download</span
+              >
+            </a>
+            <a
+              class="border border-outline-variant/20 text-primary font-label font-bold px-8 py-4 rounded-md hover:bg-surface-container-high transition-all flex items-center gap-2"
+              href="contact.html"
+            >
+              <span>Contact Me</span>
+              <span class="material-symbols-outlined text-sm"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+        </div>
 
-    <!-- 2. CAREER SUMMARY -->
-    <section>
-      <h2>Summary</h2>
-      <p>
-        Engineering leader with 8+ years in AI/ML systems, data science, and platform engineering.
-        Experienced in building scalable, production-grade AI systems and leading cross-functional teams.
-      </p>
-    </section>
+        <div
+          class="grid grid-cols-2 gap-4 w-full md:w-auto shrink-0 z-10"
+          id="stats-container"
+        ></div>
+      </section>
 
-    <!-- 3. EXPERIENCE -->
-    <section>
-      <h2>Experience</h2>
+      <section class="space-y-16 relative">
+        <div
+          class="flex items-center gap-6 border-b border-outline-variant/10 pb-6"
+        >
+          <h2 class="font-headline text-3xl font-bold text-primary">
+            Experience
+          </h2>
+          <div
+            class="h-[1px] flex-grow bg-gradient-to-r from-outline-variant/20 to-transparent"
+          ></div>
+        </div>
+        <div
+          class="space-y-24 relative before:absolute before:inset-0 before:ml-4 md:before:ml-6 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-[2px] before:bg-gradient-to-b before:from-primary-fixed/50 before:via-outline-variant/20 before:to-transparent"
+          id="experience-container"
+        ></div>
+      </section>
 
-      <h3>Tiger Analytics — Associate Principal</h3>
-      <p>Jan 2026 – Present</p>
-      <ul>
-        <li>Led multi-agent AI platform development across Azure & GCP</li>
-        <li>Designed API-first distributed systems with SLO-driven architecture</li>
-        <li>Improved productivity, adoption, and system scalability significantly</li>
-      </ul>
+      <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+        <div class="space-y-12">
+          <div
+            class="flex items-center gap-6 border-b border-outline-variant/10 pb-6"
+          >
+            <h2 class="font-headline text-3xl font-bold text-primary">
+              Core Skills
+            </h2>
+          </div>
+          <div class="space-y-8" id="skills-container"></div>
+        </div>
 
-      <h3>Tiger Analytics — Lead AIML Engineer</h3>
-      <p>Jan 2025 – Dec 2025</p>
-      <ul>
-        <li>Built GenAI platform with RAG + analytics capabilities</li>
-        <li>Processed 70K+ unstructured files into structured datasets</li>
-        <li>Enabled self-serve analytics for non-tech users</li>
-      </ul>
+        <div class="space-y-12">
+          <div
+            class="flex items-center gap-6 border-b border-outline-variant/10 pb-6"
+          >
+            <h2 class="font-headline text-3xl font-bold text-primary">
+              Education
+            </h2>
+          </div>
+          <div class="space-y-8" id="education-container"></div>
+        </div>
+      </section>
+    </main>
 
-      <h3>Tiger Analytics — Senior AIML Engineer</h3>
-      <p>Jan 2023 – Dec 2024</p>
-      <ul>
-        <li>Built OCR + NLP ingestion pipelines (500GB/day scale)</li>
-        <li>Improved data quality and reduced manual effort</li>
-      </ul>
+    <site-footer></site-footer>
+    <mobile-nav active-page="resume"></mobile-nav>
 
-      <h3>Tiger Analytics — Data Scientist</h3>
-      <p>Nov 2021 – Dec 2022</p>
-      <ul>
-        <li>XGBoost segmentation → $25M+ savings</li>
-        <li>Built ML pipelines for production monitoring</li>
-      </ul>
-
-      <h3>Dozee — Data Scientist (R&D)</h3>
-      <p>Oct 2019 – Nov 2021</p>
-      <ul>
-        <li>Built ML model for BP prediction using signal processing</li>
-        <li>Boosted product adoption and funding outcomes</li>
-      </ul>
-
-    </section>
-
-    <!-- 4. SKILLS -->
-    <section>
-      <h2>Skills</h2>
-
-      <p><strong>Languages:</strong> Python, SQL, C++, Shell</p>
-      <p><strong>Cloud:</strong> Azure, GCP, AWS, Databricks</p>
-      <p><strong>AI/ML:</strong> LLMs, RAG, ML pipelines, Deep Learning</p>
-      <p><strong>Systems:</strong> Distributed Systems, APIs, Event-driven systems</p>
-      <p><strong>Tools:</strong> PyTorch, TensorFlow, Spark, LangChain, Git</p>
-
-    </section>
-
-    <!-- 5. PUBLICATIONS & AWARDS -->
-    <section>
-      <h2>Publications & Awards</h2>
-      <ul>
-        <li>IEEE EMBS publication on sleep-wake classification</li>
-        <li>Cardiology journal publication on myocardial performance</li>
-        <li>Microsoft Agentic Hackathon winner</li>
-      </ul>
-    </section>
-
-    <!-- 6. EDUCATION -->
-    <section>
-      <h2>Education</h2>
-      <p><strong>MS Computer Science</strong> — Georgia Tech (2026)</p>
-      <p><strong>B.Tech CSE</strong> — NIT Hamirpur</p>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>© 2026 Aashit Singh</p>
-  </footer>
-
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
