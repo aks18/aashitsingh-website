@@ -1,89 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="dark" lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Contact - Aashit Singh</title>
-    
-    <link rel="stylesheet" href="styles.css"/>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
-</head>
-<body class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col pt-24 pb-20 md:pb-0 overflow-x-hidden custom-scrollbar">
-
+  </head>
+  <body
+    class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col pt-24 pb-20 md:pb-0 overflow-x-hidden custom-scrollbar"
+  >
     <site-header active-page="contact"></site-header>
 
-    <main class="flex-grow w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col lg:flex-row gap-16 lg:gap-24 relative z-10 pt-12 pb-24 animate-fade-in-up">
-        
-        <div class="w-full lg:w-5/12 flex flex-col gap-12">
-            <div>
-                <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-primary mb-6 leading-tight text-glow-primary">
-                    Let's Build <br/>
-                    <span class="text-primary-fixed">Something Remarkable.</span>
-                </h1>
-                <p class="font-body text-on-surface-variant text-lg leading-relaxed max-w-md">
-                    I'm currently open for new opportunities and collaborations. Whether you have a specific project in mind or just want to explore possibilities, I'm ready to connect.
-                </p>
-            </div>
-
-            <div class="flex flex-col gap-6">
-                <div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/10 group hover:border-primary-fixed/30 transition-all">
-                    <h3 class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant/50 mb-2 font-bold">Direct Line</h3>
-                    <a class="font-headline text-xl md:text-2xl text-primary hover:text-primary-fixed transition-colors break-all" href="mailto:aashit.singh@email.com">aashit.singh@email.com</a>
-                </div>
-                
-                <div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/10 group hover:border-primary-fixed/30 transition-all">
-                    <h3 class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant/50 mb-2 font-bold">Digital Presence</h3>
-                    <div class="flex gap-6 mt-2">
-                        <a href="#" class="text-on-surface-variant hover:text-primary-fixed transition-colors font-headline uppercase text-sm tracking-widest font-bold">LinkedIn</a>
-                        <a href="#" class="text-on-surface-variant hover:text-primary-fixed transition-colors font-headline uppercase text-sm tracking-widest font-bold">GitHub</a>
-                        <a href="#" class="text-on-surface-variant hover:text-primary-fixed transition-colors font-headline uppercase text-sm tracking-widest font-bold">Twitter</a>
-                    </div>
-                </div>
-            </div>
+    <main
+      class="flex-grow w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col lg:flex-row gap-16 lg:gap-24 relative z-10 pt-12 pb-24 animate-fade-in-up"
+    >
+      <div class="w-full lg:w-5/12 flex flex-col gap-12">
+        <div>
+          <h1
+            class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-primary mb-6 leading-tight text-glow-primary"
+          >
+            Let's Build <br />
+            <span class="text-primary-fixed">Something Remarkable.</span>
+          </h1>
+          <p
+            class="font-body text-on-surface-variant text-lg leading-relaxed max-w-md"
+          >
+            I'm currently open for new opportunities and collaborations. Whether
+            you have a specific project in mind or just want to explore
+            possibilities, I'm ready to connect.
+          </p>
         </div>
 
-        <div class="w-full lg:w-7/12">
-            <form class="bg-surface-container-lowest p-8 md:p-12 rounded-2xl border border-outline-variant/10 space-y-8 shadow-2xl relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed/5 rounded-full blur-3xl pointer-events-none"></div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="space-y-2">
-                        <label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold ml-1">Full Name</label>
-                        <input type="text" placeholder="John Doe" class="w-full bg-surface-container-low border-none rounded-lg p-4 text-white placeholder:text-zinc-700 focus:ring-1 focus:ring-primary-fixed transition-all"/>
-                    </div>
-                    <div class="space-y-2">
-                        <label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold ml-1">Email Address</label>
-                        <input type="email" placeholder="john@company.com" class="w-full bg-surface-container-low border-none rounded-lg p-4 text-white placeholder:text-zinc-700 focus:ring-1 focus:ring-primary-fixed transition-all"/>
-                    </div>
-                </div>
+        <div class="flex flex-col gap-6">
+          <div
+            class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/10 group hover:border-primary-fixed/30 transition-all"
+          >
+            <h3
+              class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant/50 mb-2 font-bold"
+            >
+              Direct Line
+            </h3>
+            <a
+              class="font-headline text-xl md:text-2xl text-primary hover:text-primary-fixed transition-colors break-all"
+              href="mailto:aashit.singh@email.com"
+              >aashit.singh@email.com</a
+            >
+          </div>
 
-                <div class="space-y-2">
-                    <label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold ml-1">Subject</label>
-                    <input type="text" placeholder="Project Inquiry" class="w-full bg-surface-container-low border-none rounded-lg p-4 text-white placeholder:text-zinc-700 focus:ring-1 focus:ring-primary-fixed transition-all"/>
-                </div>
-
-                <div class="space-y-2">
-                    <label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold ml-1">Message</label>
-                    <textarea rows="5" placeholder="Tell me about your vision..." class="w-full bg-surface-container-low border-none rounded-lg p-4 text-white placeholder:text-zinc-700 focus:ring-1 focus:ring-primary-fixed transition-all resize-none"></textarea>
-                </div>
-
-                <button type="submit" class="w-full bg-primary-fixed text-on-primary-fixed font-label font-bold py-5 rounded-lg uppercase tracking-[0.3em] hover:shadow-primary-glow active:scale-[0.98] transition-all">
-                    Initialize Connection
-                </button>
-            </form>
+          <div
+            class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/10 group hover:border-primary-fixed/30 transition-all"
+          >
+            <h3
+              class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant/50 mb-2 font-bold"
+            >
+              Digital Presence
+            </h3>
+            <div class="flex gap-6 mt-2">
+              <a
+                href="#"
+                class="text-on-surface-variant hover:text-primary-fixed transition-colors font-headline uppercase text-sm tracking-widest font-bold"
+                >LinkedIn</a
+              >
+              <a
+                href="#"
+                class="text-on-surface-variant hover:text-primary-fixed transition-colors font-headline uppercase text-sm tracking-widest font-bold"
+                >GitHub</a
+              >
+              <a
+                href="#"
+                class="text-on-surface-variant hover:text-primary-fixed transition-colors font-headline uppercase text-sm tracking-widest font-bold"
+                >Twitter</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="w-full lg:w-7/12">
+        <form
+          class="bg-surface-container-lowest p-8 md:p-12 rounded-2xl border border-outline-variant/10 space-y-8 shadow-2xl relative overflow-hidden"
+        >
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed/5 rounded-full blur-3xl pointer-events-none"
+          ></div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-2">
+              <label
+                class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold ml-1"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                placeholder="John Doe"
+                class="w-full bg-surface-container-low border-none rounded-lg p-4 text-white placeholder:text-zinc-700 focus:ring-1 focus:ring-primary-fixed transition-all"
+              />
+            </div>
+            <div class="space-y-2">
+              <label
+                class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold ml-1"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                placeholder="john@company.com"
+                class="w-full bg-surface-container-low border-none rounded-lg p-4 text-white placeholder:text-zinc-700 focus:ring-1 focus:ring-primary-fixed transition-all"
+              />
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <label
+              class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold ml-1"
+              >Subject</label
+            >
+            <input
+              type="text"
+              placeholder="Project Inquiry"
+              class="w-full bg-surface-container-low border-none rounded-lg p-4 text-white placeholder:text-zinc-700 focus:ring-1 focus:ring-primary-fixed transition-all"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <label
+              class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold ml-1"
+              >Message</label
+            >
+            <textarea
+              rows="5"
+              placeholder="Tell me about your vision..."
+              class="w-full bg-surface-container-low border-none rounded-lg p-4 text-white placeholder:text-zinc-700 focus:ring-1 focus:ring-primary-fixed transition-all resize-none"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-primary-fixed text-on-primary-fixed font-label font-bold py-5 rounded-lg uppercase tracking-[0.3em] hover:shadow-primary-glow active:scale-[0.98] transition-all"
+          >
+            Initialize Connection
+          </button>
+        </form>
+      </div>
     </main>
 
     <site-footer></site-footer>
     <mobile-nav active-page="contact"></mobile-nav>
 
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
