@@ -1,47 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aashit Singh</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Aashit Singh | AI/ML Systems Engineer</title>
+    
+    <link rel="stylesheet" href="styles.css"/>
 
-  <!-- Optional: basic SEO -->
-  <meta name="description" content="Aashit's personal website." />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
 </head>
-<body>
+<body class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col pt-24 pb-20 md:pb-0 overflow-x-hidden custom-scrollbar">
 
-  <!-- NAVBAR -->
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
-      <a href="blogs.html">Blogs</a>
-      <a href="domains.html">Domains</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <site-header active-page="home"></site-header>
 
-  <!-- MAIN CONTENT -->
-  <main>
-    <section>
-      <h1>Aashit Singh</h1>
-      <p>Systems Architect, AIML Engineer & Data Scientist</p>
+    <main class="flex-grow w-full max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-24 py-12 flex flex-col gap-24 animate-fade-in-up">
+        
+        <section class="flex flex-col md:flex-row items-center justify-between gap-12 mt-12 relative">
+            <div class="absolute -top-24 -left-24 w-64 h-64 bg-primary-fixed/10 rounded-full blur-[80px] pointer-events-none"></div>
+            
+            <div class="flex-1 space-y-8 z-10">
+                <div class="inline-flex items-center gap-3 bg-surface-container-low border border-outline-variant/10 px-4 py-2 rounded-full">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-fixed opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-fixed"></span>
+                    </span>
+                    <span class="font-label text-[10px] text-primary-fixed tracking-[0.2em] uppercase font-bold">Systems Architect | AI/ML Engineer | Data Scientist</span>
+                </div>
+                
+                <h1 class="font-headline text-6xl md:text-8xl font-bold tracking-tighter text-primary leading-[0.9]">
+                    Architecting <br/> <span class="text-primary-fixed">Intelligent</span> <br/> Systems.
+                </h1>
+                
+                <p class="font-body text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                    Merging data science rigor with systems engineering to build scalable, high-performance AI solutions. Exploring the intersection of human intent and machine execution.
+                </p>
+                
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="projects.html" class="bg-primary-fixed text-on-primary-fixed px-8 py-4 rounded font-label font-bold uppercase tracking-widest hover:shadow-primary-glow transition-all flex items-center gap-2">
+                        <span>View Projects</span>
+                        <span class="material-symbols-outlined text-sm">arrow_outward</span>
+                    </a>
+                    <a href="resume.html" class="border border-outline-variant/20 text-primary px-8 py-4 rounded font-label font-bold uppercase tracking-widest hover:bg-surface-container-high transition-all">
+                        Read Resume
+                    </a>
+                </div>
+            </div>
 
-      <p>
-        Welcome to my personal website. 
-        You can explore my resume, projects and areas of work and study.
-      </p>
-    </section>
-  </main>
+            <div class="w-full md:w-[450px] aspect-square bg-surface-container-lowest rounded-2xl flex items-center justify-center relative overflow-hidden group border border-outline-variant/10 shadow-2xl">
+                <div class="absolute inset-0 bg-gradient-to-tr from-primary-fixed/20 to-transparent opacity-40"></div>
+                <img alt="Abstract Data" class="w-full h-full object-cover opacity-60 mix-blend-luminosity group-hover:opacity-90 group-hover:scale-105 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOShBlUvNK2KkxkQQR_iqPtJeQkM0AFH_Mf5EFHLFIDcqJdHm8SgsWHRMaQ-4SCT8zZMSzC49UIeylr7uB1BRgdk-LWltuSyKHg1CzIOI-PJMvkBy0DIj07NV1Nbnal-z7sT7dOg-vlBq8Cnb3RPv0xe1598AD8ElTFHCKi-Ii8pD3_zTWmEUVvz467zwYJNjbSrgRbSbvwgF5DecINOXtY1NPN3WsvNnTpDZP7k1K9A7bS00q4S4wJAeN26trkmPQMf_VrehPrgc"/>
+            </div>
+        </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Aashit Singh</p>
-  </footer>
+        <section class="space-y-16">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div class="space-y-4">
+                    <h2 class="font-headline text-4xl font-bold text-primary tracking-tight">Core Domains</h2>
+                    <p class="font-body text-on-surface-variant max-w-xl text-lg">Specialized areas of focus driving technical innovation and systemic efficiency.</p>
+                </div>
+                <div class="h-[1px] flex-grow bg-gradient-to-r from-outline-variant/20 to-transparent mb-4 hidden md:block"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="domains-container"></div>
+        </section>
+    </main>
 
+    <site-footer></site-footer>
+    <mobile-nav active-page="home"></mobile-nav>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
