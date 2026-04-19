@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact - Aashit Singh</title>
+    
+    <link rel="stylesheet" href="styles.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <script src="tailwind-config.js"></script>
+</head>
+<body class="bg-background text-on-background font-body antialiased custom-scrollbar flex flex-col pt-24 pb-24 md:pb-0">
+
+    <header class="fixed top-0 w-full z-50 bg-[#0A0A0A]/80 backdrop-blur-lg bg-gradient-to-b from-[#1A1A1A] to-transparent">
+        <div class="flex justify-between items-center px-8 py-6 w-full max-w-screen-2xl mx-auto">
+            <div class="flex items-center gap-4">
+                <span class="material-symbols-outlined text-primary-fixed cursor-pointer hover:opacity-80 scale-95 transition-all text-2xl md:hidden">menu_open</span>
+                <span class="font-headline font-bold text-lg tracking-tighter text-white uppercase">AASHIT SINGH</span>
+            </div>
+            
+            <nav class="hidden md:flex gap-8 items-center font-headline uppercase tracking-widest text-sm">
+                <a class="text-on-surface-variant hover:text-primary-fixed transition-colors duration-300" href="index.html">Home</a>
+                <a class="text-on-surface-variant hover:text-primary-fixed transition-colors duration-300" href="resume.html">Resume</a>
+                <a class="text-on-surface-variant hover:text-primary-fixed transition-colors duration-300" href="projects.html">Projects</a>
+                <a class="text-on-surface-variant hover:text-primary-fixed transition-colors duration-300" href="blogs.html">Blogs</a>
+                <a class="text-primary-fixed font-bold transition-colors duration-300" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col lg:flex-row gap-16 lg:gap-24 relative z-10 pt-12 pb-24">
+        
+        <div class="w-full lg:w-5/12 flex flex-col gap-12 animate-fade-in-up">
+            <div>
+                <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-primary mb-6 leading-tight text-glow-primary">
+                    Let's Build <br/>
+                    <span class="text-primary-fixed">Remarkable.</span>
+                </h1>
+                <p class="font-body text-on-surface-variant text-lg leading-relaxed max-w-md">
+                    I'm currently open for new opportunities and collaborations. Whether you have a specific project in mind or just want to explore possibilities, I'm ready to connect.
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-8 bg-surface-container-low p-8 rounded-xl glow-box-primary border border-outline-variant/10">
+                <div>
+                    <h3 class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant/50 mb-2 font-bold">Direct Line</h3>
+                    <a class="font-headline text-xl md:text-2xl text-primary hover:text-primary-fixed transition-colors break-all" href="mailto:aashit.singh@example.com">
+                        aashit.singh@example.com
+                    </a>
+                </div>
+                <div>
+                    <h3 class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant/50 mb-2 font-bold">Location</h3>
+                    <p class="font-body text-lg text-primary">
+                        New Delhi, India<br/>
+                        <span class="text-on-surface-variant text-base">Remote Worldwide</span>
+                    </p>
+                </div>
+                <div class="pt-6 border-t border-outline-variant/20">
+                    <h3 class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant/50 mb-4 font-bold">Digital Presence</h3>
+                    <div class="flex gap-4">
+                        <a aria-label="LinkedIn" class="w-12 h-12 flex items-center justify-center bg-surface-container-highest rounded-lg text-on-surface-variant hover:text-primary-fixed hover:bg-surface-container-high transition-all" href="#">
+                            <span class="material-symbols-outlined">work</span>
+                        </a>
+                        <a aria-label="GitHub" class="w-12 h-12 flex items-center justify-center bg-surface-container-highest rounded-lg text-on-surface-variant hover:text-primary-fixed hover:bg-surface-container-high transition-all" href="#">
+                            <span class="material-symbols-outlined">code</span>
+                        </a>
+                        <a aria-label="Twitter" class="w-12 h-12 flex items-center justify-center bg-surface-container-highest rounded-lg text-on-surface-variant hover:text-primary-fixed hover:bg-surface-container-high transition-all" href="#">
+                            <span class="material-symbols-outlined">chat</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full lg:w-7/12 flex items-center animate-fade-in-up" style="animation-delay: 0.1s;">
+            <div class="w-full max-w-2xl bg-surface-container-lowest/50 p-8 md:p-12 rounded-2xl border border-outline-variant/10">
+                <form class="flex flex-col gap-10">
+                    <div class="relative">
+                        <input class="peer w-full bg-transparent border-0 border-b border-outline-variant text-primary font-body text-lg py-4 px-0 focus:ring-0 focus:border-primary-fixed placeholder-transparent transition-colors" id="name" name="name" placeholder="Your Name" required="" type="text"/>
+                        <label class="absolute left-0 top-4 text-on-surface-variant font-body text-lg transition-all peer-focus:-top-3 peer-focus:text-xs peer-focus:text-primary-fixed peer-valid:-top-3 peer-valid:text-xs peer-valid:text-on-surface-variant" for="name">
+                            Name
+                        </label>
+                    </div>
+                    <div class="relative">
+                        <input class="peer w-full bg-transparent border-0 border-b border-outline-variant text-primary font-body text-lg py-4 px-0 focus:ring-0 focus:border-primary-fixed placeholder-transparent transition-colors" id="email" name="email" placeholder="Email Address" required="" type="email"/>
+                        <label class="absolute left-0 top-4 text-on-surface-variant font-body text-lg transition-all peer-focus:-top-3 peer-focus:text-xs peer-focus:text-primary-fixed peer-valid:-top-3 peer-valid:text-xs peer-valid:text-on-surface-variant" for="email">
+                            Email Address
+                        </label>
+                    </div>
+                    <div class="relative mt-4">
+                        <textarea class="peer w-full bg-transparent border-0 border-b border-outline-variant text-primary font-body text-lg py-4 px-0 focus:ring-0 focus:border-primary-fixed placeholder-transparent transition-colors resize-none" id="message" name="message" placeholder="Your Message" required="" rows="4"></textarea>
+                        <label class="absolute left-0 top-4 text-on-surface-variant font-body text-lg transition-all peer-focus:-top-6 peer-focus:text-xs peer-focus:text-primary-fixed peer-valid:-top-6 peer-valid:text-xs peer-valid:text-on-surface-variant" for="message">
+                            Your Message
+                        </label>
+                    </div>
+                    <div class="pt-6">
+                        <button class="group relative inline-flex items-center justify-center px-10 py-5 bg-primary-fixed text-on-primary-fixed font-headline font-bold text-lg tracking-tight rounded-md overflow-hidden transition-all hover:shadow-primary-glow w-full sm:w-auto" type="submit">
+                            <span class="relative z-10 flex items-center gap-3">
+                                Send Message
+                                <span class="material-symbols-outlined transform group-hover:translate-x-1 transition-transform" style="font-variation-settings: 'FILL' 1;">send</span>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#0A0A0A] w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center w-full max-w-7xl mx-auto border-t border-zinc-900 pt-8 mt-auto mb-16 md:mb-0">
+        <div class="text-white font-headline font-bold tracking-tighter mb-4 md:mb-0 uppercase">AASHIT SINGH</div>
+        <div class="flex gap-6 mb-4 md:mb-0">
+            <a class="font-body text-xs tracking-tight text-on-surface-variant hover:text-white transition-colors" href="#">LinkedIn</a>
+            <a class="font-body text-xs tracking-tight text-on-surface-variant hover:text-white transition-colors" href="#">GitHub</a>
+            <a class="font-body text-xs tracking-tight text-on-surface-variant hover:text-white transition-colors" href="#">Twitter</a>
+        </div>
+        <div class="font-body text-xs tracking-tight text-on-surface-variant/50">
+            © 2024 AASHIT SINGH. ILLUMINATED EDITORIAL.
+        </div>
+    </footer>
+
+    <nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-safe bg-[#0A0A0A] border-t border-zinc-800/50 shadow-up-glow z-50 pt-2">
+        <a class="flex flex-col items-center justify-center text-on-surface-variant py-2 flex-1" href="index.html">
+            <span class="material-symbols-outlined mb-1">home</span>
+            <span class="text-[10px] font-medium tracking-tight">Home</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant py-2 flex-1" href="resume.html">
+            <span class="material-symbols-outlined mb-1">description</span>
+            <span class="text-[10px] font-medium tracking-tight">Resume</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant py-2 flex-1" href="projects.html">
+            <span class="material-symbols-outlined mb-1">folder_special</span>
+            <span class="text-[10px] font-medium tracking-tight">Projects</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-primary-fixed py-2 border-t-2 border-primary-fixed flex-1 -mt-[2px] bg-primary-fixed/5" href="contact.html">
+            <span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">mail</span>
+            <span class="text-[10px] font-medium tracking-tight">Contact</span>
+        </a>
+    </nav>
+
+</body>
+</html>
