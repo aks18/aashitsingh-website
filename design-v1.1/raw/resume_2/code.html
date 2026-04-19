@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Resume - The Illuminated Editorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#b5d25e",
+                        "on-secondary-fixed-variant": "#3c4d00",
+                        "on-secondary-container": "#defd83",
+                        "on-tertiary": "#21323e",
+                        "secondary-fixed": "#d0ef77",
+                        "primary-fixed": "#c3f400",
+                        "surface-container": "#201f1f",
+                        "primary-fixed-dim": "#abd600",
+                        "secondary": "#b5d25e",
+                        "on-primary": "#283500",
+                        "on-primary-fixed": "#161e00",
+                        "on-tertiary-fixed-variant": "#374956",
+                        "outline-variant": "#444933",
+                        "on-primary-container": "#556d00",
+                        "surface-tint": "#abd600",
+                        "tertiary-fixed-dim": "#b6c9d8",
+                        "inverse-primary": "#506600",
+                        "on-tertiary-container": "#556774",
+                        "surface": "#131313",
+                        "surface-container-highest": "#353534",
+                        "on-tertiary-fixed": "#0b1d29",
+                        "tertiary-fixed": "#d2e5f5",
+                        "on-secondary-fixed": "#161e00",
+                        "on-surface": "#e5e2e1",
+                        "error": "#ffb4ab",
+                        "secondary-container": "#5d7602",
+                        "surface-container-lowest": "#0e0e0e",
+                        "outline": "#8e9379",
+                        "tertiary": "#ffffff",
+                        "inverse-on-surface": "#313030",
+                        "on-error": "#690005",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-bright": "#3a3939",
+                        "on-primary-fixed-variant": "#3c4d00",
+                        "primary": "#ffffff",
+                        "primary-container": "#c3f400",
+                        "error-container": "#93000a",
+                        "surface-variant": "#353534",
+                        "inverse-surface": "#e5e2e1",
+                        "on-surface-variant": "#c4c9ac",
+                        "on-secondary": "#283500",
+                        "surface-container-low": "#1c1b1b",
+                        "tertiary-container": "#d2e5f5",
+                        "on-error-container": "#ffdad6",
+                        "background": "#131313",
+                        "surface-dim": "#131313",
+                        "on-background": "#e5e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6, .font-headline {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    .experience-content {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out, opacity 0.5s ease-out, margin 0.5s ease-out;
+        opacity: 0;
+    }
+    .experience-item.is-active .experience-content {
+        grid-template-rows: 1fr;
+        opacity: 1;
+        margin-top: 1rem;
+    }
+    .experience-content > div {
+        overflow: hidden;
+    }
+</style></head>
+<body class="bg-background text-on-background min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="bg-[#131313]/70 backdrop-blur-xl fixed top-0 w-full z-50 tonal transition via bg-gradient-to-b from-[#131313] to-transparent shadow-none">
+<div class="flex items-center justify-between px-8 py-6 w-full max-w-[1440px] mx-auto">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high border border-outline-variant/20">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="Black and white professional headshot portrait of a man looking confident with dramatic studio lighting against a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCttq5oPGf0zo5FFdowT2QTpWeYsmXKlgsdqZ9hadeGpqd97fRKWy3cRkLj8tPI6tCZWcsn6RovojCH0OopsUqsgkaRoUU5GvZA-RN8awii4A8YrEdY-qAmZmTA0PEjJTgLasCAlhVX4H5ycLAWT1uGdMvV23CZpIjCyRcJBHAFBtEdrs3gYkcE2_eaJ9LITb28KSIityv7cI1mlzmNSBjfw9IcDXeQPENClsw7io1aIp4Ndl7ypDWa3QnjtXTMUA-Tb8LbwOHbjcc"/>
+</div>
+</div>
+<div class="font-['Space_Grotesk'] tracking-tight font-bold text-3xl text-white hover:text-[#c3f400] transition-colors duration-300">
+                ILLUMINATED
+            </div>
+<button class="text-white hover:text-[#c3f400] transition-colors duration-300 scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[140px] pb-32 md:pb-24 px-6 md:px-12 lg:px-24 max-w-[1200px] mx-auto w-full flex flex-col gap-[120px]">
+<!-- Hero / Profile Intro -->
+<section class="flex flex-col md:flex-row gap-12 md:gap-24 items-start relative">
+<div class="absolute -top-32 -left-32 w-96 h-96 bg-primary-fixed/5 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="flex-1 space-y-8 z-10">
+<div class="space-y-4">
+<span class="font-label text-sm uppercase tracking-[0.2em] text-on-surface-variant font-semibold">Curriculum Vitae</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-primary leading-[1.1]">
+                        Architecting <br/>
+<span class="text-primary-fixed">Digital</span> Experiences.
+                    </h1>
+</div>
+<p class="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                    Senior Product Designer specializing in high-end editorial interfaces and scalable design systems. Over a decade of transforming complex workflows into intuitive, visceral digital products.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="bg-primary-fixed text-on-primary-fixed font-label font-bold px-8 py-4 rounded-md hover:shadow-[0_0_20px_rgba(195,244,0,0.3)] transition-all flex items-center gap-2" href="#">
+<span>Download PDF</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">download</span>
+</a>
+<a class="border border-outline-variant/20 text-primary font-label font-bold px-8 py-4 rounded-md hover:bg-surface-container-high transition-all flex items-center gap-2" href="#">
+<span>Contact Me</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Bento Stats -->
+<div class="grid grid-cols-2 gap-4 w-full md:w-auto shrink-0 z-10">
+<div class="bg-surface-container-lowest p-6 rounded-xl flex flex-col gap-2 border border-outline-variant/10">
+<span class="font-headline text-4xl font-bold text-primary">12+</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Years Exp.</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl flex flex-col gap-2 border border-outline-variant/10">
+<span class="font-headline text-4xl font-bold text-primary">40</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Projects</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl flex flex-col gap-2 border border-outline-variant/10 col-span-2">
+<span class="font-headline text-2xl font-bold text-primary">San Francisco, CA</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Based In</span>
+</div>
+</div>
+</section>
+<!-- Experience Timeline -->
+<section class="space-y-16 relative">
+<div class="flex items-center gap-6 border-b border-outline-variant/10 pb-6">
+<h2 class="font-headline text-3xl font-bold text-primary">Experience</h2>
+<div class="h-[1px] flex-grow bg-gradient-to-r from-outline-variant/20 to-transparent"></div>
+</div>
+<div class="space-y-24 relative before:absolute before:inset-0 before:ml-4 md:before:ml-6 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-[2px] before:bg-gradient-to-b before:from-primary-fixed/50 before:via-outline-variant/20 before:to-transparent">
+<!-- Role 1 -->
+<div class="experience-item relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active cursor-pointer">
+<div class="experience-indicator flex items-center justify-center w-8 h-8 rounded-full border-4 border-surface bg-primary-fixed shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_0_20px_rgba(195,244,0,0.4)] z-10 ml-0 md:ml-0 md:left-1/2 md:absolute transition-all duration-300">
+<span class="material-symbols-outlined text-on-primary-fixed text-[14px]" style="font-variation-settings: 'FILL' 1;">work</span>
+</div>
+<div class="experience-card w-[calc(100%-3rem)] md:w-[calc(50%-2.5rem)] pl-6 md:pl-0 p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 relative hover:border-primary-fixed/30 transition-all duration-500 overflow-hidden">
+<div class="active-line absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed transform origin-top scale-y-100 transition-transform duration-500"></div>
+<div class="experience-header flex flex-col gap-2">
+<span class="font-label text-xs uppercase tracking-widest text-primary-fixed font-semibold">2020 — Present</span>
+<div class="flex justify-between items-center">
+<h3 class="font-headline text-2xl font-bold text-primary">Principal Designer</h3>
+<span class="material-symbols-outlined text-on-surface-variant group-[.is-active]:rotate-180 transition-transform">expand_more</span>
+</div>
+<h4 class="font-body text-sm text-on-surface-variant">Global Tech Corp</h4>
+</div>
+<div class="experience-content">
+<div class="flex flex-col">
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6 pt-4">
+                    Led the complete redesign of the core enterprise dashboard, improving user task completion rates by 45%. Established and scaled a new cross-platform design system used by over 200 developers.
+                </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest rounded text-xs font-label text-primary border border-outline-variant/20">Design Systems</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded text-xs font-label text-primary border border-outline-variant/20">Leadership</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded text-xs font-label text-primary border border-outline-variant/20">Strategy</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Role 2 -->
+<div class="experience-item relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group cursor-pointer">
+<div class="experience-indicator flex items-center justify-center w-8 h-8 rounded-full border-4 border-surface bg-surface-container-high shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 ml-0 md:ml-0 md:left-1/2 md:absolute transition-all duration-300">
+<span class="material-symbols-outlined text-on-surface-variant text-[14px]">work_outline</span>
+</div>
+<div class="experience-card w-[calc(100%-3rem)] md:w-[calc(50%-2.5rem)] pl-6 md:pl-0 p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/10 relative hover:border-primary-fixed/30 transition-all duration-500 overflow-hidden">
+<div class="active-line absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed transform origin-top scale-y-0 transition-transform duration-500"></div>
+<div class="experience-header flex flex-col gap-2">
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-semibold">2016 — 2020</span>
+<div class="flex justify-between items-center">
+<h3 class="font-headline text-2xl font-bold text-primary">Senior UI/UX Designer</h3>
+<span class="material-symbols-outlined text-on-surface-variant group-[.is-active]:rotate-180 transition-transform">expand_more</span>
+</div>
+<h4 class="font-body text-sm text-on-surface-variant">Creative Agency X</h4>
+</div>
+<div class="experience-content">
+<div class="flex flex-col">
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6 pt-4">
+                    Spearheaded interaction design for flagship client projects in the fintech sector. Mapped complex user journeys and delivered high-fidelity prototypes that secured $10M in client funding.
+                </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest rounded text-xs font-label text-primary border border-outline-variant/20">Prototyping</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded text-xs font-label text-primary border border-outline-variant/20">Client Facing</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded text-xs font-label text-primary border border-outline-variant/20">Fintech</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Role 3 -->
+<div class="experience-item relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group cursor-pointer">
+<div class="experience-indicator flex items-center justify-center w-8 h-8 rounded-full border-4 border-surface bg-surface-container-high shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 ml-0 md:ml-0 md:left-1/2 md:absolute transition-all duration-300">
+<span class="material-symbols-outlined text-on-surface-variant text-[14px]">work_outline</span>
+</div>
+<div class="experience-card w-[calc(100%-3rem)] md:w-[calc(50%-2.5rem)] pl-6 md:pl-0 p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/10 relative hover:border-primary-fixed/30 transition-all duration-500 overflow-hidden">
+<div class="active-line absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed transform origin-top scale-y-0 transition-transform duration-500"></div>
+<div class="experience-header flex flex-col gap-2">
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-semibold">2013 — 2016</span>
+<div class="flex justify-between items-center">
+<h3 class="font-headline text-2xl font-bold text-primary">Visual Designer</h3>
+<span class="material-symbols-outlined text-on-surface-variant group-[.is-active]:rotate-180 transition-transform">expand_more</span>
+</div>
+<h4 class="font-body text-sm text-on-surface-variant">Startup Inc.</h4>
+</div>
+<div class="experience-content">
+<div class="flex flex-col">
+<p class="font-body text-sm text-on-surface-variant leading-relaxed pt-4">
+                    Designed marketing collateral, foundational brand identity, and the V1 web application interface for an early-stage SaaS product.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Split Section: Skills & Education -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+<!-- Skills -->
+<div class="space-y-12">
+<div class="flex items-center gap-6 border-b border-outline-variant/10 pb-6">
+<h2 class="font-headline text-3xl font-bold text-primary">Core Skills</h2>
+</div>
+<div class="space-y-8">
+<!-- Skill Group 1 -->
+<div class="space-y-4">
+<h3 class="font-label text-sm uppercase tracking-widest text-primary-fixed">Design &amp; Strategy</h3>
+<div class="flex flex-wrap gap-3">
+<div class="px-4 py-2 bg-surface-container-low border border-outline-variant/20 rounded text-sm text-primary hover:border-primary-fixed/50 transition-colors cursor-default">UI/UX Design</div>
+<div class="px-4 py-2 bg-surface-container-low border border-outline-variant/20 rounded text-sm text-primary hover:border-primary-fixed/50 transition-colors cursor-default">Design Systems</div>
+<div class="px-4 py-2 bg-surface-container-low border border-outline-variant/20 rounded text-sm text-primary hover:border-primary-fixed/50 transition-colors cursor-default">Prototyping</div>
+<div class="px-4 py-2 bg-surface-container-low border border-outline-variant/20 rounded text-sm text-primary hover:border-primary-fixed/50 transition-colors cursor-default">User Research</div>
+<div class="px-4 py-2 bg-surface-container-low border border-outline-variant/20 rounded text-sm text-primary hover:border-primary-fixed/50 transition-colors cursor-default">Information Architecture</div>
+</div>
+</div>
+<!-- Skill Group 2 -->
+<div class="space-y-4">
+<h3 class="font-label text-sm uppercase tracking-widest text-on-surface-variant">Tools &amp; Tech</h3>
+<div class="flex flex-wrap gap-3">
+<div class="px-4 py-2 bg-surface-container-lowest border border-outline-variant/10 rounded text-sm text-on-surface-variant hover:text-primary transition-colors cursor-default">Figma</div>
+<div class="px-4 py-2 bg-surface-container-lowest border border-outline-variant/10 rounded text-sm text-on-surface-variant hover:text-primary transition-colors cursor-default">Framer</div>
+<div class="px-4 py-2 bg-surface-container-lowest border border-outline-variant/10 rounded text-sm text-on-surface-variant hover:text-primary transition-colors cursor-default">HTML/CSS</div>
+<div class="px-4 py-2 bg-surface-container-lowest border border-outline-variant/10 rounded text-sm text-on-surface-variant hover:text-primary transition-colors cursor-default">Tailwind</div>
+<div class="px-4 py-2 bg-surface-container-lowest border border-outline-variant/10 rounded text-sm text-on-surface-variant hover:text-primary transition-colors cursor-default">React (Basic)</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Education -->
+<div class="space-y-12">
+<div class="flex items-center gap-6 border-b border-outline-variant/10 pb-6">
+<h2 class="font-headline text-3xl font-bold text-primary">Education</h2>
+</div>
+<div class="space-y-8">
+<!-- Edu 1 -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 hover:bg-surface-container transition-colors group">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline text-xl font-bold text-primary group-hover:text-primary-fixed transition-colors">MFA Interaction Design</h3>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">2011 - 2013</span>
+</div>
+<h4 class="font-body text-sm text-on-surface-variant mb-4">California College of the Arts</h4>
+<p class="font-body text-sm text-on-surface-variant/80">
+                            Focused on tangible interfaces and speculative design. Thesis explored the intersection of physical architecture and digital spatial environments.
+                        </p>
+</div>
+<!-- Edu 2 -->
+<div class="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/10 hover:bg-surface-container-low transition-colors group">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline text-xl font-bold text-primary group-hover:text-primary-fixed transition-colors">BFA Graphic Design</h3>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">2007 - 2011</span>
+</div>
+<h4 class="font-body text-sm text-on-surface-variant mb-4">Rhode Island School of Design</h4>
+<p class="font-body text-sm text-on-surface-variant/80">
+                            Foundational studies in typography, grid systems, and visual communication.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="bg-[#131313]/80 backdrop-blur-2xl fixed bottom-0 w-full z-50 rounded-t-none no-line elevation via tonal shift shadow-[0_-40px_60px_-10px_rgba(171,214,0,0.05)] fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-4 md:hidden">
+<a class="flex flex-col items-center justify-center text-[#c4c9ac] opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#c3f400] relative after:content-[''] after:absolute after:-bottom-2 after:w-1 after:h-1 after:bg-[#c3f400] after:rounded-full hover:opacity-100 transition-opacity Active: translate-y-[-2px] transition-all" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest font-semibold">Work</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#c4c9ac] opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined mb-1">menu_book</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest font-semibold">Insight</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#c4c9ac] opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined mb-1">psychology</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest font-semibold">Coaching</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#c4c9ac] opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined mb-1">mail</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest font-semibold">Contact</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="bg-[#131313] text-white w-full relative bottom-0 flat max-w-7xl mx-auto px-8 py-24 flex flex-col md:flex-row justify-between items-center gap-8 mt-auto pt-[120px]">
+<div class="font-['Space_Grotesk'] text-lg font-bold text-[#c3f400]">
+            ILLUMINATED
+        </div>
+<div class="flex flex-wrap justify-center gap-6 md:gap-8 font-['Manrope'] text-xs tracking-widest uppercase">
+<a class="text-[#c4c9ac] hover:text-white transition-colors" href="#">Archives</a>
+<a class="text-[#c4c9ac] hover:text-white transition-colors" href="#">Methodology</a>
+<a class="text-[#c4c9ac] hover:text-white transition-colors" href="#">Privacy</a>
+<a class="text-[#c3f400] underline underline-offset-8 hover:text-white transition-colors" href="#">Connect</a>
+</div>
+<div class="font-['Manrope'] text-xs tracking-widest uppercase text-[#c4c9ac]">
+            © 2024 THE ILLUMINATED EDITORIAL. ALL RIGHTS RESERVED.
+        </div>
+</footer>
+<script>
+    document.querySelectorAll('.experience-item').forEach(item => {
+        const header = item.querySelector('.experience-header');
+        header.addEventListener('click', () => {
+            const isActive = item.classList.contains('is-active');
+            
+            // Close all items
+            document.querySelectorAll('.experience-item').forEach(i => {
+                i.classList.remove('is-active');
+                // Reset indicator styling for inactive items
+                const indicator = i.querySelector('.experience-indicator');
+                indicator.classList.remove('bg-primary-fixed', 'shadow-[0_0_20px_rgba(195,244,0,0.4)]');
+                indicator.classList.add('bg-surface-container-high');
+                const icon = indicator.querySelector('.material-symbols-outlined');
+                icon.innerText = 'work_outline';
+                icon.classList.remove('text-on-primary-fixed');
+                icon.classList.add('text-on-surface-variant');
+                
+                const card = i.querySelector('.experience-card');
+                card.classList.remove('bg-surface-container-low', 'border-primary-fixed/30');
+                card.classList.add('bg-surface-container-lowest');
+                
+                const line = i.querySelector('.active-line');
+                line.classList.remove('scale-y-100');
+                line.classList.add('scale-y-0');
+            });
+            
+            // If the clicked item wasn't active, open it
+            if (!isActive) {
+                item.classList.add('is-active');
+                const indicator = item.querySelector('.experience-indicator');
+                indicator.classList.add('bg-primary-fixed', 'shadow-[0_0_20px_rgba(195,244,0,0.4)]');
+                indicator.classList.remove('bg-surface-container-high');
+                const icon = indicator.querySelector('.material-symbols-outlined');
+                icon.innerText = 'work';
+                icon.classList.add('text-on-primary-fixed');
+                icon.classList.remove('text-on-surface-variant');
+                
+                const card = item.querySelector('.experience-card');
+                card.classList.add('bg-surface-container-low', 'border-primary-fixed/30');
+                card.classList.remove('bg-surface-container-lowest');
+
+                const line = item.querySelector('.active-line');
+                line.classList.add('scale-y-100');
+                line.classList.remove('scale-y-0');
+            }
+        });
+    });
+</script></body></html>

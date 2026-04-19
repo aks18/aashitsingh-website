@@ -1,0 +1,92 @@
+/* Combined Design System 
+   Merges base layout logic, component animations, and updated visual styles.
+*/
+
+:root {
+    --primary-glow: rgba(204, 255, 0, 0.4);
+    --transition-speed: 0.3s;
+    --background-dark: #0A0A0A; /* Refactored deeper black */
+}
+
+/* 1. Base Styles */
+body { 
+    font-family: 'Manrope', sans-serif; 
+    background-color: var(--background-dark); 
+    color: #e5e2e1; 
+    /* Merged min-height logic for layout integrity */
+    min-height: max(884px, 100dvh);
+}
+
+/* 2. Typography */
+h1, h2, h3, h4, h5, h6, .font-headline { 
+    font-family: 'Space Grotesk', sans-serif; 
+}
+
+/* 3. Reusable Utilities & Glow Effects */
+.text-glow-primary { 
+    text-shadow: 0 0 20px var(--primary-glow); 
+}
+
+.glow-box-primary { 
+    box-shadow: 0 0 40px -10px rgba(204, 255, 0, 0.15); 
+}
+
+.glow-box-tertiary {
+    box-shadow: 0 0 30px -5px rgba(255, 219, 219, 0.08);
+}
+
+.shadow-primary-glow {
+    box-shadow: 0 0 20px rgba(195, 244, 0, 0.4);
+}
+
+.shadow-up-glow {
+    box-shadow: 0 -40px 60px -10px rgba(171, 214, 0, 0.05);
+}
+
+/* 4. Custom Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #353534; /* surface-container-highest */
+    border-radius: 20px;
+}
+
+/* 5. Experience Accordion Logic (From Original) */
+.experience-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease-out;
+    opacity: 0;
+}
+
+.experience-item.is-active .experience-content {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    margin-top: 1rem;
+}
+
+.experience-content > div {
+    overflow: hidden;
+}
+
+/* 6. Refactored Keyframe Animations */
+@keyframes fadeInUp {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+}

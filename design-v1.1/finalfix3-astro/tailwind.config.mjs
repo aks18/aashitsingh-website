@@ -1,0 +1,82 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+    darkMode: "class",
+    theme: {
+        extend: {
+            colors: {
+                // ... (Your exact color palette)
+                "tertiary-container": "#d2e5f5",
+                "on-error": "#690005",
+                "surface-container-lowest": "#0e0e0e",
+                "tertiary-fixed-dim": "#b6c9d8",
+                "on-error-container": "#ffdad6",
+                "surface-container-highest": "#353534",
+                "surface-container-high": "#2a2a2a",
+                "secondary-container": "#5d7602",
+                "outline-variant": "#444933",
+                "tertiary-fixed": "#d2e5f5",
+                "inverse-on-surface": "#313030",
+                "primary-container": "#c3f400",
+                "on-surface": "#e5e2e1",
+                "surface": "#131313",
+                "outline": "#8e9379",
+                "on-tertiary-fixed": "#0b1d29",
+                "error": "#ffb4ab",
+                "surface-tint": "#abd600",
+                "on-primary-container": "#556d00",
+                "on-primary-fixed-variant": "#3c4d00",
+                "error-container": "#93000a",
+                "surface-container": "#201f1f",
+                "surface-bright": "#3a3939",
+                "primary-fixed": "#c3f400",
+                "on-secondary-fixed": "#161e00",
+                "on-secondary": "#283500",
+                "background": "#131313",
+                "secondary-fixed-dim": "#b5d25e",
+                "on-secondary-container": "#defd83",
+                "surface-container-low": "#1c1b1b",
+                "on-primary": "#283500",
+                "surface-variant": "#353534",
+                "secondary-fixed": "#d0ef77",
+                "primary-fixed-dim": "#abd600",
+                "on-secondary-fixed-variant": "#3c4d00",
+                "on-background": "#e5e2e1",
+                "tertiary": "#ffffff",
+                "inverse-surface": "#e5e2e1",
+                "on-tertiary-container": "#556774",
+                "inverse-primary": "#506600",
+                "on-primary-fixed": "#161e00",
+                "primary": "#ffffff",
+                "surface-dim": "#131313",
+                "on-surface-variant": "#c4c9ac",
+                "on-tertiary-fixed-variant": "#374956",
+                "on-tertiary": "#21323e",
+                "secondary": "#b5d25e"
+            },
+            borderRadius: {
+                DEFAULT: "0.125rem",
+                lg: "0.25rem",
+                xl: "0.5rem",
+                full: "0.75rem"
+            },
+            fontFamily: {
+                headline: ["Space Grotesk", "sans-serif"],
+                body: ["Manrope", "sans-serif"],
+                label: ["Manrope", "sans-serif"]
+            },
+            keyframes: {
+                'fade-in-up': {
+                    '0%': { opacity: '0', transform: 'translateY(20px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
+                }
+            },
+            animation: {
+                'fade-in-up': 'fade-in-up 0.6s ease-out forwards',
+            }
+        },
+    },
+    plugins: [
+        require('@tailwindcss/container-queries'),
+    ],
+}
