@@ -10,54 +10,76 @@ const CORE_DOMAINS = [
     {
         icon: "account_tree",
         title: "Systems Design",
-        description: "Architecting robust, scalable, and highly available technical infrastructures. Focusing on microservices and distributed systems."
+        description: "Architecting robust, scalable, and highly available technical infrastructures."
     },
     {
         icon: "smart_toy",
         title: "AI/ML Engineering",
-        description: "Developing and deploying machine learning models into production. Bridging the gap between theory and functional software."
+        description: "Developing and deploying machine learning models into production. Making systems <b>INTELLIGENT</b>."
     },
     {
         icon: "analytics",
         title: "Data Science",
-        description: "Extracting actionable insights from complex datasets using statistical modeling, predictive analytics, and deep learning."
+        description: "Extracting actionable insights from complex datasets using statistical modeling, predictive analytics and deep learning."
     }
 ];
 
 // --- RESUME DATA ---
 const RESUME_STATS = [
-    { value: "12+", label: "Years Exp.", span: false },
-    { value: "40", label: "Projects", span: false },
-    { value: "San Francisco, CA", label: "Based In", span: true }
+    { value: "8+", label: "Years Exp.", span: false },
+    { value: "20+", label: "Projects", span: false },
+    { value: "REMOTE, INDIA", label: "Based In", span: true }
 ];
 
 const EXPERIENCE_DATA = [
     {
-        period: "2020 — Present", role: "Principal Designer", company: "Global Tech Corp",
-        description: "Led the complete redesign of the core enterprise dashboard, improving user task completion rates by 45%. Established and scaled a new cross-platform design system used by over 200 developers.",
-        tags: ["Design Systems", "Leadership", "Strategy"], isActive: true
+        period: "Jan 2026 — Present", role: "Associate Principal, AIML", company: "Tiger Analytics, Hyderabad",
+        description: "Designing and building scalable, API-first multi-agent AI platforms on Azure & GCP with strict SLOs, enabling automated DS workflows and codebase documentation. Driving measurable impact with 99% faster time-to-first-model and 97% reduction in documentation effort, while owning roadmap and cross-functional execution.",
+        tags: ["Multiagent AI Systems Design", "Leadership", "GCP", "Azure", "GenAI", "Unsupervised ML"], isActive: true
     },
     {
-        period: "2016 — 2020", role: "Senior UI/UX Designer", company: "Creative Agency X",
-        description: "Spearheaded interaction design for flagship client projects in the fintech sector. Mapped complex user journeys and delivered high-fidelity prototypes that secured $10M in client funding.",
-        tags: ["Prototyping", "Fintech"], isActive: false
+        period: "Jan 2025 — Dec 2025", role: "Lead AIML Engineer", company: "Tiger Analytics, Remote",
+        description: "Built and productionized a scalable GenAI bot & data platform on Azure & Databricks with reusable, API-driven components, owning system design, roadmap and end-to-end delivery. Delivered 97% accurate ingestion of 70K+ unstructured files, enabled self-serve analytics with 99.9% faster TAT and 100% adoption and established SLO-driven systems for scalable, cost-efficient LLM workloads.",
+        tags: ["Agentic Systems Design", "Data Pipelines", "Azure", "Databricks", "GenAI"], isActive: false
     },
     {
-        period: "2013 — 2016", role: "Visual Designer", company: "Startup Inc.",
-        description: "Designed marketing collateral, foundational brand identity, and the V1 web application interface for an early-stage SaaS product.",
-        tags: [], isActive: false
+        period: "Jan 2023 — Dec 2024", role: "Senior Data Scientist", company: "Tiger Analytics, Remote",
+        description: "Designed and deployed a scalable, configurable OCR + LLM + NLP ingestion platform on Azure and Databricks, processing 500+ GB/day of unstructured data into structured, analytics-ready datasets. Delivered 95% extraction accuracy and 90% reduction in manual effort, while building RAG-based support systems that reduced AHT by 21% and improved CSAT by 15% with high adoption.",
+        tags: ["System Design", "Data Pipelines", "OCR", "NLP", "GenAI"], isActive: false
+    },
+    {
+        period: "Nov 2021 — Dec 2022", role: "Data Scientist", company: "Tiger Analytics, Hyderabad",
+        description: "Built and deployed an XGBoost-based customer segmentation model, reducing marketing spend by 40% and saving $25M+ with minimal impact on response rates. Developed OCR + CNN + NLP pipelines and automated ML systems for retraining and monitoring, ensuring robust end-to-end model performance from problem framing to production deployment.",
+        tags: ["Statistics", "Supervised ML", "EDA", "FE"], isActive: false
+    },
+    {
+        period: "Oct 2019 — Nov 2021", role: "Data Scientist", company: "Dozee, Bangalore",
+        description: "Researched, developed, and deployed a novel ML model using CNNs and signal processing to predict blood pressure from contactless body vibration data. Achieved 0.92 correlation and 83% detection rate, driving 600% growth in product adoption and supporting successful pre-Series A and Series A fundraising.",
+        tags: ["Statistics", "Supervised ML", "Unsupervised ML", "Deep Learning", "Signal Processing", "Time-Series Modeling"], isActive: false
     }
 ];
 
 const SKILLS_DATA = [
     {
-        category: "Design & Strategy",
-        skills: ["UI/UX Design", "Design Systems", "Prototyping"]
+        category: "Leadership",
+        skills: ["Stakeholder Management", "Mentoring", "Performance Reviews", "Interviews"]
+    },
+    {
+        category: "Systems Design",
+        skills: ["Multiagent AI Systems", "Distributed Systems", "API Design", "SLO/SLI Design", "Security & Governance"]
+    }, 
+    {
+        category: "Cloud & Infra",
+        skills: ["GCP", "Azure", "Databricks", "AWS"]
+    }, 
+    {
+        category: "AI, ML & DS",
+        skills: ["Statistics", "Data Pipelines", "Data Modeling", "ML Infra", "LLMOps", "EDA", "FE", "NLP", "GenAI", "Machine Learning", "Reinforcement Learning"]
     }
 ];
 
 const EDUCATION_DATA = [
-    { degree: "MFA Interaction Design", period: "2011 - 2013", school: "California College of the Arts" }
+    { degree: "B. Tech. (CSE)", period: "2013 - 2017", school: "NIT Hamirpur" }
 ];
 
 // --- PROJECTS DATA ---
@@ -187,11 +209,10 @@ class SiteFooter extends HTMLElement {
             <footer class="bg-[#0A0A0A] w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto border-t border-zinc-900 mt-12 pb-24 md:pb-12">
                 <div class="text-white font-bold tracking-tighter mb-4 md:mb-0 uppercase">AASHIT SINGH</div>
                 <div class="flex gap-6 mb-4 md:mb-0">
-                    <a class="font-['Manrope'] text-xs tracking-tight text-zinc-600 hover:text-white transition-colors" href="#">LinkedIn</a>
-                    <a class="font-['Manrope'] text-xs tracking-tight text-zinc-600 hover:text-white transition-colors" href="#">GitHub</a>
-                    <a class="font-['Manrope'] text-xs tracking-tight text-zinc-600 hover:text-white transition-colors" href="#">Twitter</a>
+                    <a class="font-['Manrope'] text-xs tracking-tight text-zinc-600 hover:text-white transition-colors" href="https://www.linkedin.com/in/aashit-singh/">LinkedIn</a>
+                    <a class="font-['Manrope'] text-xs tracking-tight text-zinc-600 hover:text-white transition-colors" href="https://github.com/aks18/">GitHub</a>
                 </div>
-                <div class="font-['Manrope'] text-xs tracking-tight text-zinc-500">© 2024 AASHIT SINGH.</div>
+                <div class="font-['Manrope'] text-xs tracking-tight text-zinc-500">© 2026 AASHIT SINGH.</div>
             </footer>`;
     }
 }

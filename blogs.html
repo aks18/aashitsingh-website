@@ -18,7 +18,61 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="tailwind-config.js"></script>
   </head>
+
+  <!-- =============================== This is temp. code ========================== -->
   <body
+    class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col pt-24 pb-20 md:pb-0 overflow-x-hidden custom-scrollbar"
+  >
+    <site-header active-page="none"></site-header>
+
+    <main
+      class="flex-grow flex items-center justify-center px-6 py-12 relative overflow-hidden"
+    >
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary-fixed/5 rounded-full blur-[120px] pointer-events-none"
+      ></div>
+
+      <section class="text-center space-y-8 z-10 animate-fade-in-up">
+        <div class="space-y-2">
+          <h1
+            class="font-headline text-[120px] md:text-[180px] font-bold leading-none text-primary tracking-tighter mix-blend-lighten opacity-20"
+          >
+            Blogs
+          </h1>
+          <h2
+            class="font-headline text-3xl md:text-5xl font-bold text-primary-fixed -mt-12 md:-mt-20 tracking-tight text-glow-primary"
+          >
+            Hmm..<span class="text-white">.</span>
+          </h2>
+        </div>
+
+        <p
+          class="font-body text-on-surface-variant max-w-md mx-auto text-lg leading-relaxed"
+        >
+          This page is under construction! 
+          Please come back after some time.
+        </p>
+
+        <div class="pt-6">
+          <a
+            href="index.html"
+            class="inline-flex items-center gap-3 bg-primary-fixed text-on-primary-fixed px-8 py-4 rounded font-label font-bold uppercase tracking-[0.2em] hover:shadow-primary-glow transition-all active:scale-95"
+          >
+            <span class="material-symbols-outlined text-sm">home</span>
+            Return to Base
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <site-footer></site-footer>
+    <mobile-nav active-page="none"></mobile-nav>
+
+    <script src="scripts.js"></script>
+  </body>
+
+  <!-- =============================== Below is the main code ========================== -->
+  <!-- <body
     class="bg-[#0A0A0A] text-on-background font-body antialiased min-h-screen flex flex-col pt-24 pb-20 md:pb-0 overflow-x-hidden custom-scrollbar"
   >
     <site-header active-page="blogs"></site-header>
@@ -81,5 +135,5 @@
     <mobile-nav active-page="blogs"></mobile-nav>
 
     <script src="scripts.js"></script>
-  </body>
+  </body> -->
 </html>
