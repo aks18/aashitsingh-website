@@ -28,22 +28,22 @@ const CORE_DOMAINS = [
 const RESUME_STATS = [
     { value: "8+", label: "Years Exp.", span: false },
     { value: "20+", label: "Projects", span: false },
-    { value: "REMOTE, INDIA", label: "Based In", span: true }
+    { value: "Hybrid, India", label: "Base", span: true }
 ];
 
 const EXPERIENCE_DATA = [
     {
-        period: "Jan 2026 — Present", role: "Associate Principal, AIML", company: "Tiger Analytics, Hyderabad",
+        period: "Jan 2026 — Present", role: "Associate Principal, AIML", company: "Tiger Analytics, Hybrid",
         description: "Designing and building scalable, API-first multi-agent AI platforms on Azure & GCP with strict SLOs, enabling automated DS workflows and codebase documentation. Driving measurable impact with 99% faster time-to-first-model and 97% reduction in documentation effort, while owning roadmap and cross-functional execution.",
         tags: ["Multiagent AI Systems Design", "Leadership", "GCP", "Azure", "GenAI", "Unsupervised ML"], isActive: true
     },
     {
-        period: "Jan 2025 — Dec 2025", role: "Lead AIML Engineer", company: "Tiger Analytics, Remote",
+        period: "Jan 2025 — Dec 2025", role: "Lead AIML Engineer", company: "Tiger Analytics, Hybrid",
         description: "Built and productionized a scalable GenAI bot & data platform on Azure & Databricks with reusable, API-driven components, owning system design, roadmap and end-to-end delivery. Delivered 97% accurate ingestion of 70K+ unstructured files, enabled self-serve analytics with 99.9% faster TAT and 100% adoption and established SLO-driven systems for scalable, cost-efficient LLM workloads.",
         tags: ["Agentic Systems Design", "Data Pipelines", "Azure", "Databricks", "GenAI"], isActive: false
     },
     {
-        period: "Jan 2023 — Dec 2024", role: "Senior Data Scientist", company: "Tiger Analytics, Remote",
+        period: "Jan 2023 — Dec 2024", role: "Senior Data Scientist", company: "Tiger Analytics, Hybrid",
         description: "Designed and deployed a scalable, configurable OCR + LLM + NLP ingestion platform on Azure and Databricks, processing 500+ GB/day of unstructured data into structured, analytics-ready datasets. Delivered 95% extraction accuracy and 90% reduction in manual effort, while building RAG-based support systems that reduced AHT by 21% and improved CSAT by 15% with high adoption.",
         tags: ["System Design", "Data Pipelines", "OCR", "NLP", "GenAI"], isActive: false
     },
