@@ -124,25 +124,31 @@ const PROJECTS_DATA = [
 // --- BLOG DATA ---
 const BLOG_POSTS = [
     {
-        id: 1, title: "The Moral Algorithms: Teaching Empathy to Neural Networks", category: "AI Ethics", date: "March 15, 2024",
-        excerpt: "As models scale, the alignment problem shifts from theoretical constraints to practical implementations of human values.",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDRzTZlqtIqupXcifk-LWrvUy0AdvDAOc10MVwp9cTz0vfEhl9-st3U9sWvoSVPrOi-vKSg9biDNOC1g3wzWaFrcpljoMk0BEMGtcH4_WXdZiZGNtiPclMOEWP6ZzmoTJ3u8-o8ua0epW_QRpkmM03aq0SPhvAI4GBBItGJ2xklbTC77mQKfKG2F54gGIP2GNG7OUPMLRHBqeQ6ErzRdIOo9uqc8oQKlqdOA3zkx0ICN9A5AplUJnP0HXR_NC3NLXcXkFuq2DCqt6w", featured: true
+        id: 1, 
+        slug: "blog-1-collections-in-python", 
+        title: "What are Collections, in Python & how to use them?", 
+        category: "Programming Basics", 
+        date: "August 19, 2026",
+        excerpt: "Understanding Python’s Collections Module: Effortless Frequency Tracking & State Management.",
+        image: "assets/images/AI-generated/PythonCollections-1.png", 
+        link: "blog_post.html?slug=blog-1-collections-in-python",
+        featured: true
     },
-    {
-        id: 2, title: "Architecting Resilience in Distributed Cloud Environments", category: "Systems Eng", date: "Feb 28, 2024",
-        excerpt: "A deep dive into failure states and how chaos engineering principles can be applied to build self-healing infrastructure.",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAFXDpbcjJedQw8qgTEkWSXn3SFd8G_4MfMH9HmqeX4MZTN01j3Zsn8UEw4-n7W3Ske-6IB9zytfcNtx9GB4FujYr_7BrIYxyxdwKyJ4KMU5VZxcOAKRd5IWHmeOrAPrys3vclesySyR4cp7AS8u-3oCUN9aqu6zjeXoP0rJdxNZLYgRq9NtUDkd9Ocq-2uFtLPW4wEh3Ow4DgJMf5h2DThH75umPVFcVsEASqj605FsB1lRgSlE1vPQooAWyI-5c1ADRUalQhyhuY", featured: false
-    },
-    {
-        id: 3, title: "The Narrative Arc of Big Data", category: "Data Storytelling", date: "Jan 12, 2024",
-        excerpt: "Raw metrics lack context. Discovering the frameworks required to translate petabytes of raw telemetry.",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDKp_qI_7P0ZA2j08swXKGXLyAZ-mdltyof9TyyfLV6cnLhQBqbz714tqBLq4B6-C_5_u-usFOEVUqmoZCHXqTdQByWZ3FQ4PsR1LxrbEal11ef6DeTfQT2hEUAXtIyu7sIg6v6H7rx6HSyry0KVgGxAQuqAfwzF3AEa4Ix1lQu6ZIzDprbmjfDk2yKokIRVHHMRIw5_pQWtQhKsqPzSV0t5vEerKOl6p9Y4cDY2VWWycwTjnOtVpKCZlQC19XnqsWUTzoDmjDSB0M", featured: false
-    },
-    {
-        id: 4, title: "Bias in Generative Models: A Systemic Review", category: "AI Ethics", date: "Nov 05, 2023",
-        excerpt: "Evaluating the hidden latencies of bias within popular LLMs and strategies for more equitable training.",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBcd7Cyb6pCHTCkQEjjQv_qPnNrHvrVBmTsUri8EvivtQsAO9ofu4e5Q1_cDY1vGPa-DdWkYmX9pEojWGfVUJPp121xkC-NZzAFyMVerTXNydGt7DYpWphaN-VIh__kWxbBd6s50pFxtjICdOn3XhjJL_vBZOLZ0_jOO114pOrKrr1tUq2PrEYCyYviwPX-FL0gmowpGQMsaCtmMiF6fC20mCHCMelqfs4tlTPBWEPDYilI0xQKP1K45Q56frHA-sRdWedxfvSSHgE", featured: false
-    }
+    // {
+    //     id: 2, title: "Architecting Resilience in Distributed Cloud Environments", category: "Systems Eng", date: "Feb 28, 2024",
+    //     excerpt: "A deep dive into failure states and how chaos engineering principles can be applied to build self-healing infrastructure.",
+    //     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAFXDpbcjJedQw8qgTEkWSXn3SFd8G_4MfMH9HmqeX4MZTN01j3Zsn8UEw4-n7W3Ske-6IB9zytfcNtx9GB4FujYr_7BrIYxyxdwKyJ4KMU5VZxcOAKRd5IWHmeOrAPrys3vclesySyR4cp7AS8u-3oCUN9aqu6zjeXoP0rJdxNZLYgRq9NtUDkd9Ocq-2uFtLPW4wEh3Ow4DgJMf5h2DThH75umPVFcVsEASqj605FsB1lRgSlE1vPQooAWyI-5c1ADRUalQhyhuY", featured: false
+    // },
+    // {
+    //     id: 3, title: "The Narrative Arc of Big Data", category: "Data Storytelling", date: "Jan 12, 2024",
+    //     excerpt: "Raw metrics lack context. Discovering the frameworks required to translate petabytes of raw telemetry.",
+    //     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDKp_qI_7P0ZA2j08swXKGXLyAZ-mdltyof9TyyfLV6cnLhQBqbz714tqBLq4B6-C_5_u-usFOEVUqmoZCHXqTdQByWZ3FQ4PsR1LxrbEal11ef6DeTfQT2hEUAXtIyu7sIg6v6H7rx6HSyry0KVgGxAQuqAfwzF3AEa4Ix1lQu6ZIzDprbmjfDk2yKokIRVHHMRIw5_pQWtQhKsqPzSV0t5vEerKOl6p9Y4cDY2VWWycwTjnOtVpKCZlQC19XnqsWUTzoDmjDSB0M", featured: false
+    // },
+    // {
+    //     id: 4, title: "Bias in Generative Models: A Systemic Review", category: "AI Ethics", date: "Nov 05, 2023",
+    //     excerpt: "Evaluating the hidden latencies of bias within popular LLMs and strategies for more equitable training.",
+    //     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBcd7Cyb6pCHTCkQEjjQv_qPnNrHvrVBmTsUri8EvivtQsAO9ofu4e5Q1_cDY1vGPa-DdWkYmX9pEojWGfVUJPp121xkC-NZzAFyMVerTXNydGt7DYpWphaN-VIh__kWxbBd6s50pFxtjICdOn3XhjJL_vBZOLZ0_jOO114pOrKrr1tUq2PrEYCyYviwPX-FL0gmowpGQMsaCtmMiF6fC20mCHCMelqfs4tlTPBWEPDYilI0xQKP1K45Q56frHA-sRdWedxfvSSHgE", featured: false
+    // }
 ];
 
 
@@ -231,7 +237,7 @@ customElements.define('site-footer', SiteFooter);
 // Blogs 
 function createBlogCard(post) { /* Same as previous version */
     return `
-        <article class="bg-surface-container-low rounded p-6 flex flex-col gap-5 hover:-translate-y-1 transition-transform duration-300 group relative cursor-pointer">
+        <a href="${post.link || '#'}" class="bg-surface-container-low rounded p-6 flex flex-col gap-5 hover:-translate-y-1 transition-transform duration-300 group relative cursor-pointer">
             <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-container opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div class="aspect-video w-full rounded overflow-hidden bg-surface-container-high relative">
                 <img alt="${post.title}" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500" src="${post.image}"/>
@@ -242,14 +248,14 @@ function createBlogCard(post) { /* Same as previous version */
             </div>
             <h3 class="text-xl font-bold text-primary leading-snug group-hover:text-primary-container transition-colors">${post.title}</h3>
             <p class="text-sm text-on-surface-variant line-clamp-2">${post.excerpt}</p>
-        </article>`;
+        </a>`;
 }
 
 function createFeaturedPost(post) { /* Same as previous version */
     if (!post) return '';
     return `
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 w-full animate-fade-in-up" style="animation-delay: 0.1s;">
-            <article class="lg:col-span-12 bg-surface-container-low rounded-lg p-8 md:p-12 flex flex-col md:flex-row gap-8 glow-box-primary group cursor-pointer border border-transparent hover:border-surface-variant transition-all duration-300 relative overflow-hidden">
+            <a href="${post.link || '#'}" class="lg:col-span-12 bg-surface-container-low rounded-lg p-8 md:p-12 flex flex-col md:flex-row gap-8 glow-box-primary group cursor-pointer border border-transparent hover:border-surface-variant transition-all duration-300 relative overflow-hidden">
                 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-container scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300 ease-out"></div>
                 <div class="md:w-1/2 flex flex-col justify-center gap-6">
                     <div class="flex items-center gap-3">
@@ -266,7 +272,7 @@ function createFeaturedPost(post) { /* Same as previous version */
                     <div class="absolute inset-0 bg-gradient-to-tr from-surface to-transparent z-10 opacity-30"></div>
                     <img alt="${post.title}" class="w-full h-full object-cover opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700 ease-out" src="${post.image}"/>
                 </div>
-            </article>
+            </a>
         </section>`;
 }
 
