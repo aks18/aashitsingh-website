@@ -1,0 +1,315 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title id="page-title">Blog - Aashit Singh</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Manrope:wght@200..800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <!-- Add these to your <head> section -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <!-- Lightweight Markdown Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <style>
+      /* --- Custom Markdown Article Styling --- */
+      
+      /* 1. Headers: Pure White & Space Grotesk Font */
+      #post-content h1,
+      #post-content h2,
+      #post-content h3,
+      #post-content h4,
+      #post-content h5,
+      #post-content h6 {
+        font-family: 'Space Grotesk', sans-serif;
+        color: #ffffff !important;
+        font-weight: 700;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+      }
+
+      #post-content h1 {
+        font-size: 2.25rem; /* 36px */
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #2a2a2a;
+        padding-bottom: 0.75rem;
+      }
+
+      #post-content h2 {
+        font-size: 1.75rem; /* 28px */
+        margin-top: 2rem;
+        margin-bottom: 0.875rem;
+      }
+
+      #post-content h3 {
+        font-size: 1.35rem; /* 21px */
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+      }
+
+      #post-content h4 {
+        font-size: 1.125rem; /* 18px */
+        margin-top: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+
+      @media (min-width: 768px) {
+        #post-content h1 { font-size: 2.75rem; }
+        #post-content h2 { font-size: 2rem; }
+        #post-content h3 { font-size: 1.5rem; }
+      }
+
+      /* 2. Bold Text: Signature Neon (#86f400) */
+      #post-content strong,
+      #post-content b {
+        color: #86f400 !important;
+        font-weight: 700;
+      }
+
+      /* 3. Base Body Paragraphs & Lists */
+      #post-content p {
+        font-family: 'Manrope', sans-serif;
+        font-size: 1rem;
+        line-height: 1.75;
+        color: #c4c9ac;
+        margin-bottom: 1.25rem;
+      }
+
+      #post-content ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        margin-bottom: 1.25rem;
+        color: #c4c9ac;
+      }
+
+      #post-content ol {
+        list-style-type: decimal;
+        padding-left: 1.5rem;
+        margin-bottom: 1.25rem;
+        color: #c4c9ac;
+      }
+
+      #post-content li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+      }
+
+      /* 4. Programming / Code Styling */
+      /* Inline Code */
+      #post-content :not(pre) > code {
+        font-family: 'Fira Code', monospace;
+        font-size: 0.875em;
+        background-color: #201f1f;
+        color: #86f400;
+        padding: 0.2rem 0.45rem;
+        border-radius: 0.25rem;
+        border: 1px solid rgba(142, 147, 121, 0.2);
+      }
+
+      /* Code Blocks */
+      #post-content pre {
+        background-color: #0e0e0e;
+        border: 1px solid #2a2a2a;
+        border-radius: 0.5rem;
+        padding: 1.25rem;
+        margin: 1.5rem 0;
+        overflow-x: auto;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      #post-content pre:hover {
+        border-color: rgba(134, 244, 0, 0.4);
+        box-shadow: 0 0 25px -5px rgba(134, 244, 0, 0.1);
+      }
+
+      #post-content pre code {
+        font-family: 'Fira Code', monospace;
+        font-size: 0.875rem;
+        line-height: 1.6;
+        color: #e5e2e1;
+        background: transparent;
+        padding: 0;
+        border: none;
+      }
+
+      /* 5. Links, Blockquotes & Media Transitions */
+      #post-content a {
+        color: #86f400;
+        text-decoration: none;
+        border-bottom: 1px dashed rgba(134, 244, 0, 0.5);
+        transition: all 0.2s ease;
+      }
+
+      #post-content a:hover {
+        color: #ffffff;
+        border-bottom-style: solid;
+        border-bottom-color: #ffffff;
+      }
+
+      #post-content blockquote {
+        border-left: 3px solid #86f400;
+        background-color: rgba(28, 27, 27, 0.6);
+        padding: 0.75rem 1.25rem;
+        margin: 1.5rem 0;
+        border-radius: 0 0.375rem 0.375rem 0;
+        font-style: italic;
+        color: #e5e2e1;
+      }
+
+      #post-content img {
+        border-radius: 0.5rem;
+        border: 1px solid #2a2a2a;
+        margin: 2rem auto;
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
+      }
+
+      #post-content img:hover {
+        transform: scale(1.015);
+        border-color: rgba(134, 244, 0, 0.3);
+      }
+
+      #post-content pre {
+        position: relative; /* Enables absolute positioning for the copy button */
+        }
+
+        .copy-code-btn {
+        position: absolute;
+        top: 0.6rem;
+        right: 0.6rem;
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+        background-color: rgba(32, 31, 31, 0.85);
+        border: 1px solid #2a2a2a;
+        color: #c4c9ac;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.375rem;
+        font-family: 'Fira Code', monospace;
+        font-size: 0.75rem;
+        cursor: pointer;
+        backdrop-filter: blur(4px);
+        transition: all 0.2s ease;
+        }
+
+        .copy-code-btn:hover {
+        color: #86f400;
+        border-color: rgba(134, 244, 0, 0.5);
+        background-color: #0e0e0e;
+        }
+    </style>
+  </head>
+
+  <body class="bg-[#0A0A0A] text-on-background font-body antialiased min-h-screen flex flex-col pt-24 pb-20 md:pb-0 overflow-x-hidden custom-scrollbar">
+    <site-header active-page="blogs"></site-header>
+
+    <!-- Change max-w-4xl to max-w-6xl or max-w-7xl -->
+    <main class="flex-grow w-full max-w-7xl mx-auto px-6 md:px-12 py-12 flex flex-col gap-10">
+      <!-- Back Navigation with Smooth Hover Transition -->
+      <a href="blogs.html" class="inline-flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary-fixed transition-all duration-300 w-fit group">
+        <span class="material-symbols-outlined text-base group-hover:-translate-x-1 transition-transform duration-300">arrow_back</span>
+        Back to Editorial
+      </a>
+
+      <!-- Article Header -->
+      <header class="flex flex-col gap-4 animate-fade-in-up">
+        <div id="post-meta" class="flex items-center gap-3 text-xs tracking-wider uppercase text-primary-fixed font-mono flex-wrap"></div>
+        <h1 id="post-title" class="text-3xl md:text-5xl font-bold tracking-tight text-white leading-tight font-headline">Loading...</h1>
+      </header>
+
+      <!-- Main Content Card Wrapper with Glow & Hover Transitions -->
+      <div class="bg-surface-container-low/40 rounded-xl p-6 md:p-10 border border-surface-container-high/60 hover:border-surface-variant transition-all duration-300 shadow-xl relative overflow-hidden group">
+        <!-- Ambient Neon Glow Bar on Top -->
+        <div class="absolute left-0 top-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary-fixed/40 to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+        <!-- Rendered Markdown Body -->
+        <article id="post-content" class="animate-fade-in-up">
+        </article>
+      </div>
+    </main>
+
+    <site-footer></site-footer>
+    <mobile-nav active-page="blogs"></mobile-nav>
+
+    <script src="scripts.js"></script>
+    <script>
+      function addCopyButtons() {
+        document.querySelectorAll('#post-content pre').forEach((pre) => {
+        // Avoid appending duplicate buttons
+        if (pre.querySelector('.copy-code-btn')) return;
+
+        const button = document.createElement('button');
+        button.className = 'copy-code-btn';
+        button.type = 'button';
+        button.innerHTML = `<span class="material-symbols-outlined text-xs">content_copy</span><span>Copy</span>`;
+
+        button.addEventListener('click', async () => {
+        const codeElement = pre.querySelector('code');
+        const textToCopy = codeElement ? codeElement.innerText : pre.innerText;
+
+        try {
+            await navigator.clipboard.writeText(textToCopy);
+            button.innerHTML = `<span class="material-symbols-outlined text-xs">check</span><span class="text-[#86f400]">Copied!</span>`;
+
+            setTimeout(() => {
+            button.innerHTML = `<span class="material-symbols-outlined text-xs">content_copy</span><span>Copy</span>`;
+            }, 2000);
+        } catch (err) {
+            console.error('Failed to copy code: ', err);
+        }
+        });
+
+        pre.appendChild(button);
+    });
+    }
+
+      async function loadMarkdownPost() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const slug = urlParams.get('slug');
+
+        if (!slug) {
+          window.location.href = 'blogs.html';
+          return;
+        }
+
+        // Match metadata from BLOG_POSTS array in scripts.js
+        const postData = BLOG_POSTS.find(p => p.slug === slug);
+        if (postData) {
+          document.getElementById('page-title').innerText = `${postData.title} - Aashit Singh`;
+          document.getElementById('post-title').innerText = postData.title;
+          document.getElementById('post-meta').innerHTML = `
+            <span class="bg-primary-fixed/10 text-primary-fixed px-2.5 py-1 rounded border border-primary-fixed/20 font-semibold">${postData.category}</span>
+            <span>•</span>
+            <span class="text-on-surface-variant">${postData.date}</span>`;
+        }
+
+        try {
+          const response = await fetch(`content/blog/${slug}.md`);
+          if (!response.ok) throw new Error('Post not found');
+          const markdownText = await response.text();
+          
+          // Render HTML from Markdown using Marked.js
+          document.getElementById('post-content').innerHTML = marked.parse(markdownText);
+
+        // Trigger syntax color highlighting for all code blocks
+        hljs.highlightAll();
+
+        // Inject copy buttons onto code cards
+        addCopyButtons();
+        } catch (error) {
+          document.getElementById('post-content').innerHTML = `<p class="text-red-400 font-mono">Error: Could not load the article.</p>`;
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', loadMarkdownPost);
+    </script>
+  </body>
+</html>
